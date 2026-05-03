@@ -1299,16 +1299,16 @@ nav {
 
 .stack-total-label {
   font-size: 13px;
-  color: var(--ink-muted);
+  color: var(--ink-primary);
   font-weight: 500;
 }
 
 .stack-total-val {
   font-family: 'Source Code Pro', monospace;
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 600;
-  color: var(--ink-subtle);
-  text-decoration: line-through;
+  color: var(--ink-primary);
+  /* text-decoration: line-through; */
   letter-spacing: -0.01em;
 }
 
