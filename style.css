@@ -328,10 +328,28 @@ img {
   align-items: center;
   gap: 8px;
   font-family: var(--font-display);
+  color: var(--ink-primary);
+}
+
+.nav-logo-name {
   font-size: 17px;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: var(--ink-primary);
+}
+
+.nav-logo-sep {
+  width: 1px;
+  height: 14px;
+  background: var(--border-strong);
+  margin: 0 2px;
+}
+
+.nav-logo-tagline {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  text-transform: lowercase;
 }
 
 .nav-logo-mark {
@@ -384,6 +402,13 @@ img {
 
 @media (max-width: 768px) {
   .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo-sep,
+  .nav-logo-tagline {
     display: none;
   }
 }
@@ -1821,16 +1846,14 @@ img {
   border-top: 1px solid var(--border-subtle);
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: var(--space-7);
-  padding-bottom: var(--space-6);
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding-bottom: var(--space-5);
   border-bottom: 1px solid var(--border-subtle);
-}
-
-@media (max-width: 720px) {
-  .footer-grid { grid-template-columns: 1fr; }
+  flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -1838,49 +1861,25 @@ img {
   align-items: center;
   gap: 8px;
   font-family: var(--font-display);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: -0.02em;
   color: var(--ink-primary);
-  margin-bottom: 14px;
 }
 
-.footer-tagline {
-  font-size: 14px;
+.footer-nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  font-size: 13px;
   color: var(--ink-muted);
-  max-width: 50ch;
-  line-height: 1.6;
-}
-
-.footer-mono {
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-5);
-}
-
-.footer-col-title {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-faint);
-  margin-bottom: 12px;
-}
-
-.footer-links a {
-  display: block;
-  font-size: 14px;
-  color: var(--ink-secondary);
-  padding: 4px 0;
   transition: color var(--dur-fast) var(--ease-std);
 }
 
-.footer-links a:hover {
+.footer-nav a:hover {
   color: var(--ink-primary);
 }
 
@@ -1891,8 +1890,13 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--ink-faint);
+}
+
+.footer-mono {
+  font-family: var(--font-mono);
+  font-size: 11px;
 }
 
 /* -------------------- GALLERY MODAL -------------------- */
