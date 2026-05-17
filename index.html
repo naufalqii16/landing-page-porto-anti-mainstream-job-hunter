@@ -63,94 +63,24 @@
       </a>
     </div>
 
-    <!-- <ul class="hero-meta">
-      <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Tanpa coding</li>
-      <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Hosting termasuk</li>
-      <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Preview real-time</li>
-      <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Live hari ini</li>
-    </ul> -->
-
-    
-    <!-- App preview mockup -->
-    <div class="app-preview">
-      <div class="app-window">
-        <div class="app-titlebar">
-          <div class="app-dots">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="app-url">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-            arya.axen.software
-          </div>
-          <div class="app-status">
-            <span class="status-dot"></span>
-            Live
-          </div>
-        </div>
-        <div class="app-body">
-          <aside class="app-panel">
-            <div class="panel-section-label">EDITOR</div>
-            <div class="panel-row panel-row-active">
-              <span class="panel-row-label">Nama</span>
-              <span class="panel-row-value">Arya Pratama</span>
-            </div>
-            <div class="panel-row">
-              <span class="panel-row-label">Role</span>
-              <span class="panel-row-value">Backend Engineer</span>
-            </div>
-            <div class="panel-row">
-              <span class="panel-row-label">Stack</span>
-              <span class="panel-row-value">Node.js · Go · AWS</span>
-            </div>
-            <div class="panel-row">
-              <span class="panel-row-label">Experience</span>
-              <span class="panel-row-value">2 tahun</span>
-            </div>
-            <div class="panel-row">
-              <span class="panel-row-label">Projects</span>
-              <span class="panel-row-value">6 ditambahkan</span>
-            </div>
-
-            <div class="panel-publish">
-              <button class="panel-publish-btn">
-                Publish
-                <span class="panel-publish-shortcut">⌘ S</span>
-              </button>
-            </div>
-          </aside>
-
-          <div class="app-preview-area">
-            <div class="preview-tag">PREVIEW</div>
-            <div class="preview-card">
-              <div class="preview-header">
-                <div class="preview-avatar"></div>
-                <div class="preview-name-block">
-                  <div class="preview-name-line"></div>
-                  <div class="preview-name-line preview-name-line-sm"></div>
-                </div>
-              </div>
-              <div class="preview-tags">
-                <span>Backend</span>
-                <span>Node.js</span>
-                <span>AWS</span>
-                <span>+3</span>
-              </div>
-              <div class="preview-grid">
-                <div class="preview-tile"></div>
-                <div class="preview-tile"></div>
-                <div class="preview-tile"></div>
-                <div class="preview-tile"></div>
-              </div>
-              <div class="preview-bars">
-                <div class="preview-bar"></div>
-                <div class="preview-bar preview-bar-md"></div>
-                <div class="preview-bar preview-bar-sm"></div>
-              </div>
-            </div>
+    <!-- App preview - video showcase -->
+      <div class="app-preview">
+        <div class="app-window">
+          <div class="app-video">
+            <video
+              src="https://pub-26de51d950d741dda388f834d7df2072.r2.dev/lp-nomi/sample-video-hero.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+              disablepictureinpicture
+              disableremoteplayback
+              aria-label="Axen Studio Preview"
+            ></video>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>
 
@@ -190,7 +120,7 @@
 </section>
 
 <!-- SHOWCASE -->
-<section class="section section-showcase" id="showcase">
+<!-- <section class="section section-showcase" id="showcase">
   <div class="container">
     <div class="section-head">
       <span class="section-tag">Showcase</span>
@@ -303,7 +233,113 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<!-- SHOWCASE -->
+<section class="section section-showcase" id="showcase">
+  <div class="container">
+    <div class="section-head section-head-showcase">
+        <span class="section-tag">Showcase</span>
+        <h2 class="section-headline">Ini portofolio yang akan kamu punya.</h2>
+        <p class="section-sub">
+          Setiap tema didesain dengan standar yang sama profesionalnya. Klik salah satu untuk melihat variasinya secara lengkap.
+        </p>
+      </div>
+
+      <div class="showcase-controls">
+        <div class="showcase-arrows">
+          <button type="button" class="showcase-arrow" id="showcasePrev" aria-label="Sebelumnya">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button type="button" class="showcase-arrow" id="showcaseNext" aria-label="Berikutnya">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="showcase-counter" id="showcaseCounter">
+          <strong>01</strong> / <span id="showcaseTotal">04</span>
+        </div>
+      </div>
+
+    <div class="showcase">
+      <div class="showcase-viewport" id="showcaseViewport">
+        <div class="showcase-track" id="showcaseTrack">
+          <button type="button" class="showcase-item" data-theme="minimalist" data-thumb="images/mockup1.jpeg">
+            <div class="showcase-frame">
+              <div class="showcase-bar">
+                <div class="showcase-bar-dots"><span></span><span></span><span></span></div>
+                <div class="showcase-bar-url">arya.axen.software</div>
+              </div>
+              <div class="showcase-canvas">
+                <img src="images/mockup1.jpeg" alt="Simple Minimalist preview" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-meta">
+              <span class="showcase-name">Simple Minimalist</span>
+              <span class="showcase-cta">Lihat detail
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="showcase-item" data-theme="editorial" data-thumb="images/mockup2.png">
+            <div class="showcase-frame">
+              <div class="showcase-bar">
+                <div class="showcase-bar-dots"><span></span><span></span><span></span></div>
+                <div class="showcase-bar-url">mira.axen.software</div>
+              </div>
+              <div class="showcase-canvas">
+                <img src="images/mockup2.png" alt="Editorial Serif preview" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-meta">
+              <span class="showcase-name">Editorial Serif</span>
+              <span class="showcase-cta">Lihat detail
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="showcase-item" data-theme="mono" data-thumb="images/mockup1.jpeg">
+            <div class="showcase-frame">
+              <div class="showcase-bar">
+                <div class="showcase-bar-dots"><span></span><span></span><span></span></div>
+                <div class="showcase-bar-url">dimas.axen.software</div>
+              </div>
+              <div class="showcase-canvas">
+                <img src="images/mockup1.jpeg" alt="Developer Mono preview" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-meta">
+              <span class="showcase-name">Developer Mono</span>
+              <span class="showcase-cta">Lihat detail
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </button>
+
+          <button type="button" class="showcase-item" data-theme="industrial" data-thumb="images/mockup2.png">
+            <div class="showcase-frame">
+              <div class="showcase-bar">
+                <div class="showcase-bar-dots"><span></span><span></span><span></span></div>
+                <div class="showcase-bar-url">rania.axen.software</div>
+              </div>
+              <div class="showcase-canvas">
+                <img src="images/mockup2.png" alt="Industrial preview" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-meta">
+              <span class="showcase-name">Industrial</span>
+              <span class="showcase-cta">Lihat detail
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 <!-- HOW IT WORKS -->
 <section class="section section-how" id="how">
