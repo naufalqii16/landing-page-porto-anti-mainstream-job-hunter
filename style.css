@@ -326,15 +326,28 @@ img {
 .nav-logo {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-family: var(--font-display);
   color: var(--ink-primary);
 }
 
-.nav-logo-name {
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+.nav-logo-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.nav-logo-x {
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.nav-logo-een {
+  font-weight: 300;
+  /* Pakai brand violet kalau ada token-nya, fallback ke ink-primary */
+  color: var(--brand-violet, #A89FF5);
 }
 
 .nav-logo-sep {
@@ -350,22 +363,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--ink-muted);
   text-transform: lowercase;
-}
-
-.nav-logo-mark {
-  width: 18px;
-  height: 18px;
-  border-radius: 5px;
-  background: var(--ink-primary);
-  position: relative;
-}
-
-.nav-logo-mark::after {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  background: var(--bg-page);
-  border-radius: 2px;
 }
 
 .nav-links {
@@ -1891,13 +1888,22 @@ img {
 
 .footer-logo {
   display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  align-items: baseline;
   font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.03em;
   color: var(--ink-primary);
+}
+
+.footer-logo-x {
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.footer-logo-een {
+  font-weight: 300;
+  color: var(--brand-violet, #A89FF5);
 }
 
 .footer-nav {
